@@ -421,6 +421,7 @@ class BurpExtender(
             aboutBody = file.read()
         aboutLabel = JLabel(
                 aboutBody.format(extension_name=EXTENSION_NAME))
+        aboutLabel.putClientProperty("html.disable", None)
         aboutLabelConstraints = GridBagConstraints()
         aboutLabelConstraints.weightx = 1
         aboutLabelConstraints.weighty = 1
