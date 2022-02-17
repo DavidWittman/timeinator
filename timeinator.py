@@ -223,6 +223,7 @@ class BurpExtender(
         attackPanel = JPanel(GridBagLayout())
 
         targetHeadingLabel = JLabel("<html><b>Target</b></html>")
+        targetHeadingLabel.putClientProperty("html.disable", None)
         targetHeadingLabelConstraints = GridBagConstraints()
         targetHeadingLabelConstraints.gridx = 0
         targetHeadingLabelConstraints.gridy = 0
@@ -233,6 +234,7 @@ class BurpExtender(
 
         startAttackButton = JButton("<html><b>Start Attack</b></html>",
                                     actionPerformed=self._startAttack)
+        startAttackButton.putClientProperty("html.disable", None)
         startAttackButtonConstraints = GridBagConstraints()
         startAttackButtonConstraints.gridx = 4
         startAttackButtonConstraints.gridy = 0
@@ -288,6 +290,7 @@ class BurpExtender(
         attackPanel.add(self._protocolCheckBox, protocolCheckBoxConstraints)
 
         requestHeadingLabel = JLabel("<html><b>Request</b></html>")
+        requestHeadingLabel.putClientProperty("html.disable", None)
         requestHeadingLabelConstraints = GridBagConstraints()
         requestHeadingLabelConstraints.gridx = 0
         requestHeadingLabelConstraints.gridy = 4
@@ -327,7 +330,8 @@ class BurpExtender(
         clearPayloadButtonConstraints.insets = insets
         attackPanel.add(clearPayloadButton, clearPayloadButtonConstraints)
 
-        payloadHeadingLabel = JLabel("<html><b>Payloads<b></html>")
+        payloadHeadingLabel = JLabel("<html><b>Payloads</b></html>")
+        payloadHeadingLabel.putClientProperty("html.disable", None)
         payloadHeadingLabelConstraints = GridBagConstraints()
         payloadHeadingLabelConstraints.gridx = 0
         payloadHeadingLabelConstraints.gridy = 7
