@@ -2,11 +2,12 @@ Uuid: 3c7fc852346548adb781b7f4f30938c0
 ExtensionType: 2
 Name: Timeinator, Time Based Attacker
 RepoName: timeinator
-ScreenVersion: 1.0
-SerialVersion: 2
+ScreenVersion: 1.0a
+SerialVersion: 3
 MinPlatformVersion: 0
 ProOnly: False
 Author: FSecureLABS
 ShortDescription: Used to perform timing attacks over an unreliable network such as the internet.
 EntryPoint: timeinator.py
 BuildCommand: 
+SupportedProducts: Pro, Community
